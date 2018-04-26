@@ -12,12 +12,12 @@ import butterknife.InjectView;
 public class LoginActivity extends AppCompatActivity {//login_btn
     @InjectView(R.id.login_btn)
     private TextView mLoginBtn;
-
+    private LoginPresenter mLoginPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
-
+        mLoginPresenter = new LoginPresenter();
     }
 }

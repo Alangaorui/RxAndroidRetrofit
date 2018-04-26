@@ -6,5 +6,7 @@ package com.grant.rxandroid.TotailRxAndroid.ui.login;
 
 public class LoginPresenter {
 
-    
+    public LoginPresenter() {
+
+    }
 }
