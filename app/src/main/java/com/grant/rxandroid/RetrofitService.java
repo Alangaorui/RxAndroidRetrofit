@@ -15,9 +15,9 @@ import rx.Observable;
 
 public interface RetrofitService {
 
-    @POST("**")
+    @POST("userInfo/userLogin")
     Observable<LoginEntity> login(@Query("login_phone") String phone,
                                    @Query("login_password") String password);
-    @POST("**")
+    @POST("signAndBinding/bankList")
     Observable<Baens> listban();
 }
